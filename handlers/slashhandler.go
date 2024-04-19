@@ -12,5 +12,6 @@ var SlashCommandHandler = map[string]func(s *discordgo.Session, i *discordgo.Int
 	"8ball":  slashcommands.HandleEightBallCommand,
 	"avatar": slashcommands.HandleAvatarCommand,
 	"help":   slashcommands.HelpCommandHandler,
+	"lvl":    slashcommands.HandleLvlCommand,
 	// Dodaj więcej komend tutaj
 }

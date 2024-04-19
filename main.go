@@ -34,6 +34,7 @@ func main() {
 	// Rejestrowanie funkcji obsługi komend
 	client.AddHandler(handler.CommandHandler)
 	client.AddHandler(interactionCreate)
+	client.AddHandler(handler.Lvl_handler)
 
 	// Otwieranie połączenia
 	err = client.Open()
